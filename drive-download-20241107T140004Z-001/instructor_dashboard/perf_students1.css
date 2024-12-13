@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 60px;
+    height: 100vh;
+    background-color: #f1f8f5;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.3s;
+    overflow: hidden;
+}
+
+.sidebar:hover {
+    width: 200px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    transition: width 0.3s, height 0.3s;
+}
+
+.sidebar-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+.sidebar-item:hover {
+    background-color: #00a181;
+}
+
+.text {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.sidebar:hover .text {
+    opacity: 1;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.notification-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    position: absolute;
+    left: 1350px;
+}
+
+.notification-container .text {
+    font-size: 16px;
+    color: black;
+    opacity: 1;
+}
+.notification-container .icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.notification-container .profile {
+    width: 25px;
+    height: 25px;
+    background-color: #444;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.left-navigation {
+    width: 200px;
+    padding-top: 50px;
+    background-color: #f8f9fa;
+}
+
+.nav-item {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.nav-item.active,
+.nav-item:hover {
+    font-weight: bold;
+}
+
+/* Header Section */
+.header1 {
+    padding: 20px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    position: absolute; /* or absolute if you want it positioned relative to the page */
+    top: 10px; /* Moves it 10px down */
+    left: 270px; /* Moves it 20px to the right */
+   
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.dropdown {
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown:hover {
+    text-decoration: underline;
+}
+
+/* Center the table container and move it slightly downward */
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 50px auto 0;
+    width: 100%;
+}
+
+/* Center the main content and header */
+.main-content1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-right: 50px;
+}
+
+/* Table styling */
+table {
+    width: 80%; /* Adjust table width */
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+img {
+    max-width: 150px;
+    height: auto;
+}
+
+.btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.approve-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.decline-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.main-content1 {
+    text-align: center;
+    margin-top: 20px;
+}

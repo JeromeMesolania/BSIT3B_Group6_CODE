@@ -1,0 +1,148 @@
+/* Message Instructor Header */
+h1 {
+    font-size: 28px;
+    text-align: center;
+    color: #00a181;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Search Form */
+form[method="GET"] {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+form[method="GET"] input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+form[method="GET"] input[type="text"]:focus {
+    border-color: #00a181;
+}
+
+form[method="GET"] button {
+    padding: 10px 20px;
+    background-color: #00a181;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+form[method="GET"] button:hover {
+    background-color: #00a181;
+}
+
+/* Search Results Section */
+h2 {
+    font-size: 24px;
+    color: #00a181;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li form {
+    margin-top: 10px;
+}
+
+li textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+li textarea:focus {
+    border-color: #00a181;
+}
+
+li button {
+    padding: 10px 15px;
+    background-color: #00a181;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+li button:hover {
+    background-color: #00a181;
+}
+
+/* No Results Found */
+p {
+    text-align: center;
+    color: #d9534f;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+
+/* Button Group: Align Buttons Side-by-Side */
+.button-group {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    gap: 10px; /* Space between buttons */
+    margin-top: 10px;
+    margin-bottom: 10px; /* Added margin for spacing */
+}
+
+/* General Button Styling */
+.button-group button {
+    padding: 10px 15px;
+    background-color: #00a181;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+    background-color: #008f72;
+}
+
+/* Reply Button Specific Styling */
+.reply-button {
+    background-color: #007bff;
+}
+
+.reply-button:hover {
+    background-color: #0056b3;
+}
+

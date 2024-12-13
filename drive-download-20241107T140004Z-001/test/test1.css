@@ -1,0 +1,238 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Centers everything horizontally */
+    align-items: center; /* Centers everything vertically */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Horizontally center all items */
+    justify-content: center; /* Vertically center the content */
+    width: 100%;
+    padding: 20px;
+}
+
+.login-form h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form h1 span {
+    margin-left: 5px; /* Adjusts the space between 'to' and 'CODE' */
+}
+
+.code-letter {
+    font-weight: 700; /* Makes the text bold */
+}
+
+.code-letter.c {
+    color: #00a181; /* Green for C */
+}
+
+.code-letter.o {
+    color: #a4e473; /* Light Green for O */
+}
+
+.code-letter.d {
+    color: #f2ef12; /* Yellow for D */
+}
+
+.code-letter.e {
+    color: #004651; /* Dark Blue-Green for E */
+}
+
+.login-form .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+}
+
+.login-form h2 {
+    line-height: 40px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #272346;
+    text-align: center;
+}
+
+.login-form .main {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    margin: 30px 0;
+}
+
+.content {
+    flex: 1;
+    padding: 3em;
+    /* Increased shadow intensity and blur for more emphasis */
+    box-shadow: 4px 12px 50px -15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px 0 0 8px;
+}
+
+.context-box {
+    flex: 0.8;
+    padding: 20px;
+    background: #e0f7fa;
+    /* Increased shadow intensity and blur for more emphasis */
+    box-shadow: 4px 12px 50px -15px rgba(0, 0, 0, 0.2);
+    border-radius: 0 8px 8px 0;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.register-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-btn:hover {
+    background-color: #004d40;
+}
+
+.btn, button, input {
+    border-radius: 35px;
+}
+
+.btn:hover,
+button:hover {
+    color: #272346;
+    transition: 0.5s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+.login-form form {
+    margin: 30px 0;
+}
+
+.login-form input {
+    outline: none;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #999;
+    padding: 14px 20px;
+    width: 100%;
+    border: none;
+    background: #f7fafc;
+    transition: 0.3s ease;
+}
+
+.login-form input:focus {
+    background: transparent;
+    border: 1px solid #4e34b6;
+}
+
+.login-form button {
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    background: #00a181;
+    border: none;
+    padding: 14px 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+p.account a {
+    color: #00a181;
+}
+
+p.account a:hover {
+    text-decoration: underline;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 20px;  /* Space for the eye icon */
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.password-container .eye-icon {
+    position: absolute;
+    right: 20px; 
+    top: 40%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 25px;  /* Set the eye icon width */
+    height: 25px; /* Set the eye icon height */
+}
+
+.eye-icon img {
+    width: 100%;
+    height: auto;
+}
+
+
+.forgot-password {
+    text-align: center;
+    margin-top: 10px; /* Adjust for spacing */
+}
+
+.forgot-password-link {
+    color: #007BFF;       /* Adjust color to match your theme */
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.forgot-password-link:hover {
+    color: #0056b3;      /* Darker shade on hover */
+    text-decoration: underline;
+}
+
+
+@media (max-width: 736px) {
+    .login-form .main {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .content, .context-box {
+        width: 100%;
+        border-radius: 0;
+    }
+}

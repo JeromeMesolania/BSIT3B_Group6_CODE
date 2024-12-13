@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+
+
+.sidebar {
+    width: 60px;
+    height: 100vh;
+    background-color: #f1f8f5;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.3s;
+    overflow: hidden;
+}
+
+.sidebar:hover {
+    width: 200px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    transition: width 0.3s, height 0.3s;
+}
+
+.sidebar-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+.sidebar-item:hover {
+    background-color: #00a181;
+}
+
+.text {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.sidebar:hover .text {
+    opacity: 1;
+}
+
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: -10px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.notification-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    position: absolute;
+    left: 1350px;
+}
+
+.notification-container .text {
+    font-size: 16px;
+    color: black;
+    opacity: 1;
+}
+.notification-container .icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.notification-container .profile {
+    width: 25px;
+    height: 25px;
+    background-color: #444;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 10px auto;
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: absolute;
+    top: 80px;
+    left: 100px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header h1 {
+    font-size: 24px;
+    margin: 0;
+    position: absolute;
+    top: -100px;
+    left: -40px;
+  }
+
+  .filters {
+    display: flex;
+    gap: 15px;
+    
+  }
+
+  .filters select {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .content {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .content img {
+    max-width: 100px;
+    margin-bottom: 20px;
+  }
+
+  .content p {
+    font-size: 18px;
+    color: #888;
+  }
+
+  .left-navigation {
+    width: 200px;
+    padding-top: 50px;
+    background-color: #f8f9fa;
+}

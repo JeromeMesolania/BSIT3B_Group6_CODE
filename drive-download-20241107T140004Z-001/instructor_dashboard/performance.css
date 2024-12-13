@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 60px;
+    height: 100vh;
+    background-color: #f1f8f5;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.3s;
+    overflow: hidden;
+}
+
+.sidebar:hover {
+    width: 200px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    transition: width 0.3s, height 0.3s;
+}
+
+.sidebar-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+.sidebar-item:hover {
+    background-color: #00a181;
+}
+
+.text {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.sidebar:hover .text {
+    opacity: 1;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.notification-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    position: absolute;
+    left: 1350px;
+}
+
+.notification-container .text {
+    font-size: 16px;
+    color: black;
+    opacity: 1;
+}
+.notification-container .icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.notification-container .profile {
+    width: 25px;
+    height: 25px;
+    background-color: #444;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.left-navigation {
+    width: 200px;
+    padding-top: 50px;
+    background-color: #f8f9fa;
+}
+
+.nav-item {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.nav-item.active,
+.nav-item:hover {
+    font-weight: bold;
+}
+
+/* Main Content Styling */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    position: absolute;
+    top: 60px;
+    left: 300px;
+}
+.Overview-item{
+    color: #00a181;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    position: absolute;
+    left: 300px;
+    top: 90px;
+}
+.Overview-item:hover{
+    text-decoration: underline;
+}

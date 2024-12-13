@@ -1,0 +1,77 @@
+/* Header Styling */
+h1 {
+    font-size: 32px;
+    text-align: center;
+    color: #00a181;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Message List Styling */
+.message-list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.message-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Message Content Styling */
+.message-content p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Reply Form Styling */
+.reply-form {
+    margin-top: 15px;
+}
+
+.reply-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    resize: vertical;
+    transition: border-color 0.3s;
+}
+
+.reply-form textarea:focus {
+    border-color: #00a181;
+    outline: none;
+}
+
+/* Reply Button Styling */
+.reply-button {
+    padding: 10px 20px;
+    background-color: #00a181;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reply-button:hover {
+    background-color: #007b5d;
+}
+
+/* No Messages Styling */
+.no-messages {
+    text-align: center;
+    font-size: 18px;
+    color: #d9534f;
+    margin-top: 30px;
+}

@@ -1,0 +1,13 @@
+{
+    "intelephense.stubs": [
+      "apache",
+      "bcmath",
+      "calendar",
+      "Core",
+      "curl",
+      "date",
+      "dom",
+      "mongodb"
+    ]
+  }
+  

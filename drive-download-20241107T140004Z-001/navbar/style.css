@@ -1,0 +1,377 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #b0f4e3;
+    padding: 10px 20px;
+    border-color: black"
+}
+.navbar-item4 {
+    position: relative; 
+    display: inline-block;
+}
+
+
+.cart-text {
+    position: absolute;
+    bottom: -25px; /* Adjust to position the text below the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff; /* Background for the text popup */
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    white-space: nowrap;
+    text-decoration: none; /* Remove underline for the link */
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Initially invisible */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10; /* Ensures it appears above other elements */
+}
+
+/* Show the "Cart" text when hovered */
+.navbar-item4:hover .cart-text {
+    opacity: 1; /* Make the text visible */
+    visibility: visible;
+}
+
+
+.cart-text:hover {
+    background-color: #00a181;
+}
+
+.navbar-item5 {
+    position: relative; 
+    display: inline-block;
+}
+
+
+.notification-text {
+    position: absolute;
+    bottom: -25px; /* Position the text below the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff; /* Background color for the popup */
+    color: #000; /* Text color */
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Initially invisible */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10; /* Ensures the text appears above other elements */
+}
+
+
+.notification-link:hover .notification-text {
+    opacity: 1; /* Make the text visible */
+    visibility: visible;
+}
+
+
+.notification-text:hover {
+    background-color: #00a181; /* Slightly darken the background when hovered */
+}
+
+.navbar-item3 {
+    position: relative; /* Position relative for the "Logout" button */
+    display: inline-block;
+}
+
+
+.logout-button {
+    position: absolute;
+    bottom: -35px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff; 
+    color: #000; 
+    padding: 8px 15px; 
+    font-size: 14px;
+    border-radius: 5px; 
+    white-space: nowrap; 
+    text-decoration: none;
+    visibility: hidden; 
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10; 
+}
+
+
+.navbar-item3:hover .logout-button {
+    opacity: 1; 
+    visibility: visible;
+}
+
+
+.logout-button:hover {
+    background-color: #00a181; 
+    cursor: pointer;
+}
+.navbar-item12 a, .navbar-item11 a, .navbar-item2 a, .navbar-item3 a, .navbar-item4 a, .navbar-item5, .navbar-item6 a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+  }
+
+  
+  .navbar-item12 a:hover, .navbar-item11 a:hover, .navbar-item2 a:hover {
+    color: #00a181;
+  }
+
+ 
+  .navbar-item3 a:hover img, .navbar-item4 a:hover img, .navbar-item5 a:hover img {
+    filter: hue-rotate(100deg); 
+  }
+
+
+  .navbar-item1 input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+
+.navbar-logo img {
+    height: 40px;
+}
+.navbar-item11 {
+    position: absolute;
+    right: 1150px;
+   }
+
+
+
+.navbar-item12{
+    position: absolute;
+    right: 1240px ;
+}
+.navbar-item1 {
+    position: absolute;
+    right: 400px; 
+    width: 700px; 
+}
+
+
+.navbar-item1 input[type="text"] {
+    width: 100%; 
+    height: 40px; 
+    padding: 10px 40px; 
+    font-size: 14px;
+    border: 1px solid #ccc; 
+    border-radius: 25px; 
+    box-sizing: border-box; 
+    outline: none;
+    background-image: url('search.jpg'); 
+    background-repeat: no-repeat;
+    background-position: 10px center; 
+    background-size: 20px; 
+}
+
+
+.navbar-item1 input[type="text"]:focus {
+    border-color: #007bff; 
+    outline: none;
+}
+
+.navbar-item2 {
+    position: absolute;
+    right: 270px;
+   }
+   .navbar-item3 {
+    position: absolute;
+    right: 50px;
+   }
+   .navbar-item4 {
+    position: absolute;
+    right: 340px;
+    left: 1260px;
+   }
+   .navbar-item5 {
+    position: absolute;
+    right: 115px;
+   }
+   
+      
+.navbar-item input[type="text"] {
+    padding: 5px;
+}
+
+.user-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+   
+.navbar-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+   
+    ;
+}
+
+.navbar-links input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.user-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.navbar-item6 {
+    position: absolute;
+    top: 10px;
+    left: 88%;
+    transform: translateX(-50%);
+  }
+
+  .user-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 52px;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    z-index: 10;
+  }
+
+  
+  .navbar-item6:hover .dropdown {
+    display: block;
+  }
+
+  .dropdown p {
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+  }
+
+  .dropdown p:last-child {
+    border-bottom: none;
+  }
+
+  .dropdown p:hover {
+    background-color: #00a181;
+  }
+
+ 
+  .chatbox {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    flex-direction: column;
+  }
+
+  .chatbox-header {
+    padding: 10px;
+    background: #0078FF;
+    color: white;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .chatbox-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+  }
+
+  .chatbox-footer {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    background: #f0f0f0;
+  }
+
+  .chatbox-footer input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .chatbox-footer button {
+    padding: 10px;
+    background: #0078FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .chatbox-footer button:hover {
+    background: #0056b3;
+  }
+
+  .cart-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.cart-modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    max-height: 500px;
+    overflow-y: auto;
+    text-align: center;
+    position: relative;
+}
+
+.close-cart {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .carousel-item {
+        flex: 0 0 100%; 
+        max-width: 100%;
+    }
+}

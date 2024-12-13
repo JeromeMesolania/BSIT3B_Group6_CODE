@@ -1,0 +1,678 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #f1f8f5;
+    padding: 10px 20px;
+    border-bottom: 2px solid #0077b6;
+}
+.navbar-item4 {
+    position: relative; 
+    display: inline-block;
+}
+
+
+.cart-text {
+    position: absolute;
+    bottom: -25px; /* Adjust to position the text below the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff; /* Background for the text popup */
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    white-space: nowrap;
+    text-decoration: none; /* Remove underline for the link */
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Initially invisible */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10; /* Ensures it appears above other elements */
+}
+
+/* Show the "Cart" text when hovered */
+.navbar-item4:hover .cart-text {
+    opacity: 1; /* Make the text visible */
+    visibility: visible;
+}
+
+
+.cart-text:hover {
+    background-color: #00a181;
+}
+
+.navbar-item5 {
+    position: relative; 
+    display: inline-block;
+}
+
+
+.notification-text {
+    position: absolute;
+    bottom: -25px; /* Position the text below the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff; /* Background color for the popup */
+    color: #000; /* Text color */
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Initially invisible */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10; /* Ensures the text appears above other elements */
+}
+
+
+.notification-link:hover .notification-text {
+    opacity: 1; /* Make the text visible */
+    visibility: visible;
+}
+
+
+.notification-text:hover {
+    background-color: #00a181; /* Slightly darken the background when hovered */
+}
+
+.navbar-item3 {
+    position: relative;
+}
+
+.user-link {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.user-icon {
+    width: 40px; /* Adjust icon size */
+    height: 40px;
+    border-radius: 50%;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 35px; /* Position below the user icon */
+    right: -40px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    display: none; /* Hidden by default */
+    z-index: 1000;
+}
+
+/* Keep dropdown visible when hovering over the container or the menu */
+.navbar-item3:hover .dropdown-menu,
+.dropdown-menu:hover {
+    display: block;
+}
+
+.user-info {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.user-name {
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.user-email {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list li {
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-list li:last-child {
+    border-bottom: none;
+}
+
+.menu-list li a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.menu-list li a:hover {
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+.logout a {
+    color: #d9534f; /* Red for logout */
+    font-weight: bold;
+}
+
+.logout a:hover {
+    background-color: #ffe8e8;
+}
+
+.navbar-item12 a, .navbar-item11 a, .navbar-item2 a, .navbar-item3 a, .navbar-item4 a, .navbar-item5, .navbar-item6 a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+  }
+
+  
+  .navbar-item12 a:hover, .navbar-item11 a:hover, .navbar-item2 a:hover {
+    color: #00a181;
+  }
+
+ 
+  .navbar-item3 a:hover img, .navbar-item4 a:hover img, .navbar-item5 a:hover img {
+    filter: hue-rotate(100deg); 
+  }
+
+
+  .navbar-item1 input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+
+
+
+.navbar-logo img {
+    height: 40px;
+}
+.navbar-item11 {
+    position: absolute;
+    right: 1150px;
+   }
+
+
+
+.navbar-item12{
+    position: absolute;
+    right: 1240px ;
+}
+.navbar-item1 {
+    position: absolute;
+    right: 400px; 
+    width: 700px; 
+}
+
+
+.navbar-item1 input[type="text"] {
+    width: 100%; 
+    height: 40px; 
+    padding: 10px 40px; 
+    font-size: 14px;
+    border: 1px solid #ccc; 
+    border-radius: 25px; 
+    box-sizing: border-box; 
+    outline: none;
+    background-image: url('search.jpg'); 
+    background-repeat: no-repeat;
+    background-position: 10px center; 
+    background-size: 20px; 
+}
+
+
+.navbar-item1 input[type="text"]:focus {
+    border-color: #007bff; 
+    outline: none;
+}
+
+.navbar-item2 {
+    position: absolute;
+    right: 270px;
+   }
+   .navbar-item3 {
+    position: absolute;
+    right: 50px;
+   width: 10px;
+   
+    
+   }
+   .navbar-item4 {
+    position: absolute;
+    right: 370px;
+    left: 1270px;
+   
+ 
+   }
+   .navbar-item5 {
+    position: absolute;
+    right: 90px;
+  
+   }
+   
+      
+.navbar-item input[type="text"] {
+    padding: 5px;
+}
+
+.user-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+   
+
+
+.navbar-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+   
+    ;
+}
+
+.navbar-links input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.user-icon {
+    width: 40px;       /* Set width */
+    height: 40px;      /* Set height */
+    border-radius: 50%;
+}
+.navbar-item6 {
+    position: absolute;
+    top: 16px;
+    left: 89%;
+    transform: translateX(-50%);
+  }
+
+  .user-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: -60px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    width: 160px;
+    z-index: 10;
+  }
+
+  
+  .navbar-item6:hover .dropdown {
+    display: block;
+  }
+
+  .dropdown p {
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    
+  
+  }
+
+  .dropdown p:last-child {
+    border-bottom: none;
+  }
+
+  .dropdown p:hover {
+    background-color: #00a181;
+  }
+
+ 
+  .chatbox {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    flex-direction: column;
+  }
+
+  .chatbox-header {
+    padding: 10px;
+    background: #0078FF;
+    color: white;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .chatbox-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+  }
+
+  .chatbox-footer {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    background: #f0f0f0;
+  }
+
+  .chatbox-footer input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .chatbox-footer button {
+    padding: 10px;
+    background: #0078FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .chatbox-footer button:hover {
+    background: #0056b3;
+  }
+  
+
+.course-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color:#fefefe;
+    
+   
+}
+/* Adjust the .course-info container */
+.course-info {
+    flex: 2;
+    position: relative;
+    font-size: 25px;
+    margin-top: 120px;  /* Adds space above the .course-info */
+    margin-left: 300px; /* Adds space to the left */
+    padding: 10px;     /* Adds padding inside the container */
+   
+}
+
+.course-info a{
+    text-decoration: none;
+    color: #00a181;
+}
+
+/* Adjust the heading (h1) inside .course-info */
+.course-info h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    margin-top: 20px;  /* Adds space above the heading */
+    margin-left: 2px; /* Adds space to the left of the heading */
+}
+
+/* Adjust the course description */
+.course-description {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 15px;  /* Adds space above the course description */
+    padding-left: 2px; /* Adds space inside the description */
+}
+
+/* Adjust the course-meta section (rating, students) */
+.course-meta {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 10px;
+    margin-top: 20px;  /* Adds space above the course-meta */
+    margin-left: 2px; /* Adds space to the left of the meta information */
+}
+
+.course-meta .rating {
+    color: #e59819;
+}
+
+.course-meta .students {
+    color: #555;
+}
+
+.course-preview {
+    flex: 1;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.video-thumbnail {
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.play-icon {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 16px;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pricing {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.pricing .price {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.pricing button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    background-color: #6c63ff;
+    border-radius: 5px;
+}
+
+.add-to-cart:hover {
+    background-color: #5a53d6;
+}
+
+.buy-now {
+    background-color: #ff5858;
+    border-radius: 5px;
+}
+
+.buy-now:hover {
+    background-color: #e74747;
+}
+
+.guarantee {
+    font-size: 12px;
+    color: #555;
+}
+
+.course-includes {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.course-includes h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.course-includes ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-includes ul li {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+    padding-left: 20px;
+    background: url('checkmark.png') no-repeat left center;
+    background-size: 16px;
+}
+
+    
+
+.breadcrumb{
+    position: absolute;
+    top: -24px;
+    left: 13px;
+}
+.breadcrumb a{
+    font-size: 17px;
+}
+:root {
+    --border-color: #ddd; /* Default border color */
+    --border-width: 2px; /* Default border width */
+    --border-style: solid; /* Default border style */
+}
+
+.what-you-learn {
+    padding: 20px; /* Adds spacing inside the section */
+    margin: 20px auto; /* Centers the section and adds vertical spacing */
+    max-width: 800px; /* Restricts the width */
+    background-color: #fff; /* White background for the content */
+    border: var(--border-width) var(--border-style) var(--border-color); /* Customizable border */
+    border-radius: 10px; /* Rounds the corners */
+    font-family: Arial, sans-serif; /* Clean font */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    position: absolute;
+    top: 710px;
+    left: 325px;
+}
+
+.what-you-learn h2 {
+    color: #333; /* Darker text color for the heading */
+    font-size: 24px; /* Adjust heading size */
+    margin-bottom: 15px; /* Adds space below the heading */
+    text-align: left; /* Aligns the heading to the left */
+}
+
+.what-you-learn ul {
+    list-style: none; /* Removes default bullet points */
+    padding: 0; /* Removes default padding */
+}
+
+.what-you-learn ul li {
+    position: relative; /* Positions elements for icons */
+    margin-bottom: 10px; /* Adds spacing between items */
+    padding-left: 25px; /* Space for checkmark */
+    color: #555; /* Slightly lighter text color */
+    font-size: 16px; /* Readable font size */
+    line-height: 1.6; /* Spacing between lines */
+}
+
+/* Custom checkmark */
+.what-you-learn ul li::before {
+    content: '✔'; /* Checkmark icon */
+    position: absolute;
+    left: 0;
+    color: #4caf50; /* Green color for the checkmark */
+    font-size: 14px; /* Adjust size of the checkmark */
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black background with transparency */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.close-btn {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.gcash-qr-code {
+    width: 80%;
+    margin-top: 20px;
+    border: 2px solid #000;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+.instructions {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+}

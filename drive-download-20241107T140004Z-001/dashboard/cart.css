@@ -1,0 +1,83 @@
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+/* Cart Container */
+.cart-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    font-size: 1.1em;
+}
+
+.cart-item h4 {
+    margin: 0;
+    color: #34495e;
+}
+
+.cart-item p {
+    margin: 5px 0;
+    color: #7f8c8d;
+}
+
+.remove-item {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.remove-item:hover {
+    background-color: #c0392b;
+}
+
+/* Checkout Button */
+.checkout {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.checkout-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Empty Cart Message */
+.cart-container p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #95a5a6;
+}

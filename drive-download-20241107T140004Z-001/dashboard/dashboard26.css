@@ -1,0 +1,269 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #f1f8f5;
+    padding: 10px 20px;
+    border-bottom: 2px solid #0077b6;
+}
+
+.navbar-logo img {
+    height: 50px; /* Slightly larger for emphasis */
+    margin-right: 20px; /* Space between logos */
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-left: auto; /* Push links to the right */
+    gap: 25px; /* Increased spacing */
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold; /* Emphasis on text */
+    transition: color 0.3s; /* Smooth color change on hover */
+}
+
+.navbar-links a:hover {
+    color: #0077b6; /* Highlight on hover */
+}
+
+.navbar-links input[type="text"] {
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 20px; /* Rounded corners for search bar */
+    border: 1px solid #0077b6;
+    width: 250px; /* Adjust search bar width */
+    outline: none; /* Remove default outline */
+}
+
+.user-icon {
+    width: 32px; /* Slightly larger icon */
+    height: 32px;
+    border-radius: 50%; /* Rounded for user profile */
+    border: 2px solid #0077b6; /* Add border to user icon */
+}
+
+
+/* Category Links */
+.category-links {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.category-links a {
+    text-decoration: none;
+    color: #0077b6;
+    font-size: 14px;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Skill Categories Section */
+.skill-categories {
+    text-align: center;
+    padding: 20px;
+}
+
+.categories a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    color: #0077b6;
+    text-decoration: none;
+}
+
+/* Learning Section */
+.learning-card {
+    background-color: #cce5cc;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Carousel Section */
+.carousel-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.carousel-items {
+    display: flex;
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 300px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Recommended Topics */
+.topic-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.topic-tags a {
+    padding: 8px 12px;
+    background-color: #f0f0f0;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.carousel-item {
+    min-width: 300px;
+    padding: 10px;
+    text-align: center;
+}
+
+.carousel-item video {
+    width: 100%;
+    border-radius: 8px;
+}
+/* Carousel Section */
+.carousel-section {
+    margin: 20px 0;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+    max-width: 100%;
+}
+
+.carousel-btn {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    padding: 0 10px;
+    z-index: 1;
+}
+
+.carousel-items {
+    display: flex;
+    gap: 15px; /* Adds space between videos */
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 20px;
+    width: 100%;
+}
+
+.carousel-item {
+    flex: 0 0 30%; /* Each video item will take up 30% of the container width */
+    max-width: 300px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    padding: 10px;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 300px; /* Set a fixed height for the banner */
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-image {
+    position: absolute;
+    width: 50%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the image */
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-image.active {
+    opacity: 1;
+}
+
+.navbar-item3:hover .dropdown-menu,
+.dropdown-menu:hover {
+    display: block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 35px; /* Position below the user icon */
+    right: -40px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    display: none; /* Hidden by default */
+    z-index: 1000;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .carousel-item {
+        flex: 0 0 100%; /* Make videos take full width on smaller screens */
+        max-width: 100%;
+    }
+}
